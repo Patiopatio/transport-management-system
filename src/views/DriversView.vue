@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto py-10">
-    <div class="flex justify-between items-center mb-6">
-      <h1 class="text-2xl font-bold">Drivers</h1>
+    <div class="flex flex-col md:flex-row justify-between items:start md:items-center mb-6">
+      <h1 class="text-2xl font-bold mb-6">Drivers</h1>
       <div class="flex gap-2">
         <DriverFormModal
           ref="driverModalRef"
