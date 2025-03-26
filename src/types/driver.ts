@@ -1,8 +1,12 @@
-export interface Driver {
-  id: string
-  name: string // min 2 characters
-  location: string // must not contain numbers
+import type { BaseEntity } from './common'
+
+export interface Driver extends BaseEntity {
+  name: string
+  location: string
 }
 
-// Type for creating a new driver (without id)
-export type CreateDriverInput = Omit<Driver, 'id'>
+export type CreateDriverInput = Omit<Driver, 'id' | 'createdAt' | 'updatedAt'>
+
+export interface DriverFilters {
+  searchQuery: string
+}

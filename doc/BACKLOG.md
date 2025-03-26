@@ -31,18 +31,16 @@
 ### Driver UI
 
 - [x] Create `DriversView.vue`
-- [ ] Create `DriverList.vue` with mocked driver cards
-- [ ] Create `AddDriverModal.vue` using shadcn <Dialog />
-- [ ] Create form fields using BaseInput, BaseSelect
+- [x] Create `DriverFormModal.vue` using shadcn <Dialog />
+- [x] Create form fields using
 - [ ] Validate name (min 2 chars) and location (regex: no numbers) using VeeValidate
 
 ### Tour UI
 
 - [x] Create `ToursView.vue`
-- [ ] Create `TourList.vue` showing mock tour cards
-- [ ] Create `TourFormModal.vue` with form for create/edit
-- [ ] Add driver AutoComplete component filtered by mocked locationFrom
-- [ ] Validate that selected driver matches locationFrom
+- [x] Create `TourFormModal.vue` with form for create/edit
+- [x] Add driver AutoComplete component filtered by mocked locationFrom
+- [x] Validate that selected driver matches locationFrom
 
 ---
 
@@ -50,15 +48,14 @@
 
 ### Pinia Stores
 
-- [ ] Create `useDriverStore` with mock data, addDriver()
-- [ ] Create `useTourStore` with mock data, add/update/deleteTour()
+- [x] Create `getDriverStore` with mock data, addDriver()
+- [x] Create `getTourStore` with mock data, add/update/deleteTour()
 
 ### Business Logic
 
-- [ ] In Tour form: dynamically filter available drivers
-- [ ] In Driver form: validate location with regex (no numbers)
-- [ ] Add simple filters to Driver and Tour lists
-- [ ] Wire up all create/edit/delete actions
+- [x] In Tour form: dynamically filter displayed tours and add reset filter functionality
+- [x] Add simple filters to Driver and Tour lists
+- [x] Wire up all create/edit/delete actions
 
 ---
 
@@ -72,8 +69,8 @@
 
 ### Unit Tests (Vitest)
 
-- [ ] Test `useDriverStore` actions
-- [ ] Test `useTourStore` actions
+- [ ] Test `getDriverStore` actions
+- [ ] Test `getTourStore` actions
 - [ ] Test validation logic
 - [ ] Test reusable components render with props
 

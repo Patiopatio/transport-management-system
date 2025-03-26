@@ -2,12 +2,12 @@
   <SidebarProvider>
     <div class="flex min-h-screen bg-background">
       <!-- Sidebar -->
-      <aside class="hidden md:block">
+      <aside class="hidden lg:block">
         <AppSidebar />
       </aside>
 
       <!-- Main Content -->
-      <main class="flex-1">
+      <main class="flex-1 w-full">
         <div class="flex h-16 items-center px-4 lg:hidden">
           <SidebarTrigger />
         </div>
