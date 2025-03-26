@@ -2,6 +2,10 @@
 
 A simple Vue 3 + TypeScript + shadcn-vue application for managing transport tours and drivers. The application allows logistics managers to plan and manage transportation by assigning drivers to shipments based on their location.
 
+## 🎉 Live Demo
+
+https://transport-management-system-xi.vercel.app/
+
 ## ✨ Features
 
 - Driver list with create/edit/delete functionality
