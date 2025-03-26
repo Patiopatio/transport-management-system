@@ -21,7 +21,7 @@ https://transport-management-system-xi.vercel.app/
 - VeeValidate (no Yup)
 - Pinia (state management)
 - Vue Router
-- Vitest + Playwright (or Cypress)
+- Vitest + Playwright
 
 Completed:
 
