@@ -42,13 +42,14 @@
               </div>
             </ComboboxAnchor>
             <ComboboxList>
-              <ComboboxEmpty>No matching drivers</ComboboxEmpty>
+              <ComboboxEmpty class="p-2">No matching drivers</ComboboxEmpty>
               <ComboboxGroup>
                 <ComboboxItem
                   v-for="driver in getAvailableDrivers(row.original.locationFrom)"
                   :key="driver.id"
                   :value="driver.id"
                   @select="handleDriverAssign(row.original.id, driver.id)"
+                  class="p-2"
                 >
                   {{ driver.name }}
                   <ComboboxItemIndicator>

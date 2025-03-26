@@ -58,13 +58,14 @@
               </div>
             </ComboboxAnchor>
             <ComboboxList class="w-full">
-              <ComboboxEmpty>No matching drivers</ComboboxEmpty>
+              <ComboboxEmpty class="p-2">No matching drivers</ComboboxEmpty>
               <ComboboxGroup>
                 <ComboboxItem
                   v-for="driver in availableDrivers"
                   :key="driver.id"
                   :value="driver.id"
                   @select="handleDriverSelect(driver)"
+                  class="p-2"
                 >
                   {{ driver.name }}
                   <ComboboxItemIndicator>
