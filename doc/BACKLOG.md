@@ -19,18 +19,18 @@
 
 - [x] Setup base folder structure (`components`, `pages`, `stores`, `types` etc.)
 - [x] Configure router with `/drivers` and `/tours`
-- [ ] Create layout shell in `App.vue` with sidebar/nav
+- [x] Create layout shell in `App.vue` with sidebar/nav
 
 ### Homepage UI
 
-- [ ] Create main layout with two sections:
+- [x] Create main layout with two sections:
   - Sidebar (left): Contains navigation links or tabs for "Drivers" and "Tours"
   - Main content (right): Displays the selected view (Driver list or Tour list)
-- [ ] Implement router logic and basic state/tabs to switch between Driver and Tour views inside the homepage layout
+- [x] Implement router logic and basic state/tabs to switch between Driver and Tour views inside the homepage layout
 
 ### Driver UI
 
-- [ ] Create `DriversPage.vue`
+- [x] Create `DriversView.vue`
 - [ ] Create `DriverList.vue` with mocked driver cards
 - [ ] Create `AddDriverModal.vue` using shadcn <Dialog />
 - [ ] Create form fields using BaseInput, BaseSelect
@@ -38,10 +38,10 @@
 
 ### Tour UI
 
-- [ ] Create `ToursPage.vue`
+- [x] Create `ToursView.vue`
 - [ ] Create `TourList.vue` showing mock tour cards
 - [ ] Create `TourFormModal.vue` with form for create/edit
-- [ ] Add driver select dropdown filtered by mocked locationFrom
+- [ ] Add driver AutoComplete component filtered by mocked locationFrom
 - [ ] Validate that selected driver matches locationFrom
 
 ---
