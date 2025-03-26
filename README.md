@@ -2,6 +2,10 @@
 
 A simple tour planning frontend application built with Vue 3 and shadcn-vue. It allows logistics teams to manage drivers and plan tours by assigning drivers based on location.
 
+## 🎉 Live Demo
+
+https://transport-management-system-xi.vercel.app/
+
 ## ✨ Features
 
 - Driver list and add driver modal
