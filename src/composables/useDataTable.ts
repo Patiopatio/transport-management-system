@@ -1,9 +1,9 @@
 import { type ColumnDef, useVueTable, getCoreRowModel } from '@tanstack/vue-table'
 import type { BaseEntity } from '@/types/common'
-import { computed } from 'vue'
+import { computed, type ComputedRef } from 'vue'
 
 export interface DataTableOptions<T extends BaseEntity> {
-  data: T[]
+  data: T[] | ComputedRef<T[]>
   columns: ColumnDef<T>[]
   filters?: {
     searchQuery?: string
@@ -18,8 +18,12 @@ export function useDataTable<T extends BaseEntity>({
   columns,
   filters,
 }: DataTableOptions<T>) {
+  const sourceData = computed(() => {
+    return Array.isArray(data) ? data : data.value
+  })
+
   const filteredData = computed(() => {
-    let filtered = [...data]
+    let filtered = [...sourceData.value]
 
     if (filters?.searchQuery && filters.searchFields) {
       const query = filters.searchQuery.toLowerCase()

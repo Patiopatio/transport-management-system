@@ -79,7 +79,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { type ColumnDef } from '@tanstack/vue-table'
 import { useDataTable } from '@/composables/useDataTable'
 import { getToursStore } from '@/stores/getToursStore'
@@ -143,7 +143,7 @@ const columns: ColumnDef<Tour>[] = [
 ]
 
 const { table } = useDataTable<Tour>({
-  data: getTours.value,
+  data: computed(() => getTours.value),
   columns,
   filters: {
     searchQuery: filters.value.searchQuery,
